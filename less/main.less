@@ -1,7 +1,123 @@
 
 @import 'bootstrap/bootstrap.less';
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+	background: @black;
+}
+
+.navbar {
+	.gradientnav;
+	// padding: 10px 0;
+}
+
+.navbar-nav {
+	//padding: 10px 0;	//won't add padding to JEEP?
+}
+
+.navbar-brand {
+	width: 110px;
+	height: 15px;
+	background: url('../img/sprite_nav.png') no-repeat;
+	background-position: -277px -382px;
+	padding: 25px 0;
+}
 
 
-/*------- Components -------*/
-// @import 'components/navbar.less';
-	//must import your own partials in order for variables to work in the navbar file.
+.navribbon {
+	width: 70px;
+	height: 100px;
+	position: absolute;
+	background: url('../img/sprite_nav.png') no-repeat;
+	background-position: -390px -370px;
+	margin-left: 800px; //150px
+}
+
+.gradientnav {
+	background: @gray-dark;
+	background: -moz-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: -o-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: -ms-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: linear-gradient(to bottom,  @gray-dark 0%, @black 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 );
+}
+
+.hero {
+	width: 100%;
+	margin: 0 auto;
+	img {
+		width: 100%;
+	}
+
+	.herocontent {
+		position: absolute;
+		top: 8%;
+		left: 20%;
+		color: #ffffff;
+		h1 {
+			font-size: 50px;
+		}
+		p {
+			background: #222222;
+			padding: 10px;
+			width: 70%;
+
+		}
+	}
+}
+
+.jumbotron .wrangler {
+
+}
+
+
+
+
+
+
+
+
+.gradientfoot {
+	background: @gray-darker;
+	background: -moz-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000222), color-stop(100%,#111111));
+	background: -webkit-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: -o-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: -ms-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: linear-gradient(to bottom,  @gray-darker 0%, @black 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000222', endColorstr='#000111',GradientType=0 );
+}
+
+footer {
+	margin-top: 0px;
+	height: auto;
+	border-top: 1px solid @gray-dark;
+	margin-bottom: 40px;
+	.gradientfoot;
+	p {
+		font-size: @footerParagraph;
+	}
+}
+
+
+.footerdiv {
+	// margin-top: -170px;
+	width: 20%;
+	float: left;
+	h6 {
+		color: @white;
+	}
+	ul {
+		margin-left: 0px;
+		padding-bottom: 20px;
+		li {
+			list-style-type: none;
+			a {
+				color: @gray-light;
+				font-size: @footerHeader;
+			}
+		}
+	}
+}
