@@ -5888,15 +5888,31 @@ footer p {
 .promos img {
   width: 70%;
 }
-.msrpcontent h5 {
+.container .jumbotron {
+  padding: 0px;
+}
+.wrangler-one {
+  padding: 30px;
+}
+.wrangler-one h5 {
   font-size: 28px;
   line-height: 16px;
   font-weight: bold;
 }
-.msrpcontent h6 {
+.wrangler-one h6 {
   font-size: 10px;
   font-weight: bold;
 }
-.msrpcontent p {
+.wrangler-one p {
   font-size: 9px;
+}
+.wrangler-two {
+  width: 100%;
+}
+.wrangler-three {
+  text-align: center;
+  padding: 15px 0;
+}
+.wrangler-three h2 {
+  font-size: 42px;
 }
