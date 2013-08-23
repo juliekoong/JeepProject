@@ -5769,13 +5769,17 @@ body {
   background: -ms-linear-gradient(top, #333333 0%, #000000 100%);
   background: linear-gradient(to bottom, #333333 0%, #000000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#000000', GradientType=0);
+  margin-bottom: 5px;
+}
+.navbar-nav {
+  margin-bottom: 0px;
 }
 .navbar-brand {
   width: 110px;
   height: 15px;
   background: url('../img/sprite_nav.png') no-repeat;
   background-position: -277px -382px;
-  padding: 25px 0;
+  padding: 22px 0;
 }
 .navribbon {
   width: 70px;
@@ -5783,7 +5787,9 @@ body {
   position: absolute;
   background: url('../img/sprite_nav.png') no-repeat;
   background-position: -390px -370px;
-  margin-left: 800px;
+  margin-left: 830px;
+  margin-top: -15px;
+  z-index: 20;
 }
 .gradientnav {
   background: #333333;
@@ -5841,22 +5847,15 @@ footer p {
   font-size: 12px;
 }
 .hero {
+  background: url('../img/wrangler/wrangler-main.jpg') no-repeat center;
   width: 100%;
-  margin: 0 auto;
-}
-.hero img {
-  width: 100%;
-}
-.hero .herocontent {
-  position: absolute;
-  top: 8%;
-  left: 20%;
+  height: 511px;
   color: #ffffff;
 }
-.hero .herocontent h1 {
+.hero h1 {
   font-size: 50px;
 }
-.hero .herocontent p {
+.hero p {
   background: #222222;
   padding: 10px;
   width: 70%;
@@ -5890,6 +5889,8 @@ footer p {
 }
 .container .jumbotron {
   padding: 0px;
+  position: relative;
+  top: -60px;
 }
 .wrangler-one {
   padding: 30px;

@@ -9,11 +9,13 @@ body {
 
 .navbar {
 	.gradientnav;
+	margin-bottom: 5px;
 	// padding: 10px 0;
 }
 
 .navbar-nav {
 	//padding: 10px 0;	//won't add padding to JEEP?
+	margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -21,7 +23,7 @@ body {
 	height: 15px;
 	background: url('../img/sprite_nav.png') no-repeat;
 	background-position: -277px -382px;
-	padding: 25px 0;
+	padding: 22px 0;
 }
 
 
@@ -31,7 +33,9 @@ body {
 	position: absolute;
 	background: url('../img/sprite_nav.png') no-repeat;
 	background-position: -390px -370px;
-	margin-left: 800px; //150px
+	margin-left: 830px; //150px
+	margin-top: -15px;
+	z-index: 20;
 }
 
 .gradientnav {
@@ -93,16 +97,12 @@ footer {
 // HOME PAGE SHIT
 
 .hero {
+	background: url('../img/wrangler/wrangler-main.jpg') no-repeat center; 
 	width: 100%;
-	margin: 0 auto;
-	img {
-		width: 100%;
-	}
-
-	.herocontent {
-		position: absolute;
-		top: 8%;
-		left: 20%;
+	height: 511px;
+		// position: absolute;
+		// top: 8%;
+		// left: 20%;
 		color: #ffffff;
 		h1 {
 			font-size: 50px;
@@ -111,10 +111,9 @@ footer {
 			background: #222222;
 			padding: 10px;
 			width: 70%;
-
 		}
-	}
 }
+
 
 .carousel-indicators {
 	position: absolute;
@@ -151,7 +150,9 @@ footer {
 // WRANGLER PAGE SHIT
 
 .container .jumbotron {
-		padding: 0px;
+	padding: 0px;
+	position: relative;
+	top: -60px;
 }
 
 .wrangler-one {
