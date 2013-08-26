@@ -1,0 +1,103 @@
+/*	HEADER & FOOTER  */
+
+
+.navbar {
+	.gradientnav;
+	margin-bottom: 5px;
+	// padding: 10px 0;
+}
+
+.navbar-nav {
+	//padding: 10px 0;	//won't add padding to JEEP?
+	margin-bottom: 0px;
+
+	li {
+		&:hover {
+			background: black;
+		}
+	}
+}
+
+.navbar-brand {
+	width: 110px;
+	height: 15px;
+	background: url('../img/sprite_nav.png') no-repeat;
+	background-position: -277px -382px;
+	padding: 22px 0;
+}
+
+
+.navribbon {
+	width: 70px;
+	height: 100px;
+	position: absolute;
+	background: url('../img/sprite_nav.png') no-repeat;
+	background-position: -390px -370px;
+	margin-left: 830px; //150px
+	margin-top: -15px;
+	z-index: 20;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+    background: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background: black;
+}
+
+.gradientnav {
+	background: @gray-dark;
+	background: -moz-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: -o-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: -ms-linear-gradient(top,  @gray-dark 0%, @black 100%);
+	background: linear-gradient(to bottom,  @gray-dark 0%, @black 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 );
+}
+
+
+.gradientfoot {
+	background: @gray-darker;
+	background: -moz-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000222), color-stop(100%,#111111));
+	background: -webkit-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: -o-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: -ms-linear-gradient(top,  @gray-darker 0%, @black 100%);
+	background: linear-gradient(to bottom,  @gray-darker 0%, @black 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000222', endColorstr='#000111',GradientType=0 );
+}
+
+footer {
+	margin-top: 0px;
+	height: auto;
+	border-top: 1px solid @gray-dark;
+	margin-bottom: 40px;
+	.gradientfoot;
+	p {
+		font-size: @footerParagraph;
+	}
+}
+
+
+.footerdiv {
+	width: 20%;
+	float: left;
+	h6 {
+		color: @white;
+	}
+	ul {
+		margin-left: -35px;
+		padding-bottom: 20px;
+		li {
+			list-style-type: none;
+			a {
+				color: @gray-light;
+				font-size: @footerHeader;
+			}
+		}
+	}
+}

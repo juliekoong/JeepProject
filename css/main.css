@@ -5757,9 +5757,7 @@ td.visible-print {
 .bold {
   font-weight: bold;
 }
-body {
-  background: #000000;
-}
+/*	HEADER & FOOTER  */
 .navbar {
   background: #333333;
   background: -moz-linear-gradient(top, #333333 0%, #000000 100%);
@@ -5773,6 +5771,9 @@ body {
 }
 .navbar-nav {
   margin-bottom: 0px;
+}
+.navbar-nav li:hover {
+  background: black;
 }
 .navbar-brand {
   width: 110px;
@@ -5790,6 +5791,14 @@ body {
   margin-left: 830px;
   margin-top: -15px;
   z-index: 20;
+}
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+  background: black;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background: black;
 }
 .gradientnav {
   background: #333333;
@@ -5846,6 +5855,7 @@ footer p {
   color: #999999;
   font-size: 12px;
 }
+/*  WRANGLER SHIT  */
 .hero {
   background: url('../img/wrangler/wrangler-main.jpg') no-repeat center;
   width: 100%;
@@ -5856,36 +5866,10 @@ footer p {
   font-size: 50px;
 }
 .hero p {
-  background: #222222;
   padding: 10px;
   width: 70%;
-}
-.carousel-indicators {
-  position: absolute;
-  top: 77%;
-}
-.carouselimg {
-  width: 100%;
-  margin: auto;
-}
-.carmodels {
-  text-align: center;
-  width: 91.5%;
-  margin: 0 auto;
-  position: absolute;
-  top: 38%;
-  left: 4.25%;
-}
-.carmodels img {
-  width: 100%;
-}
-.promos {
-  text-align: center;
-  margin-top: -8%;
-  position: relative;
-}
-.promos img {
-  width: 70%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .container .jumbotron {
   padding: 0px;
@@ -5916,4 +5900,90 @@ footer p {
 }
 .wrangler-three h2 {
   font-size: 42px;
+}
+#colorpicker li {
+  width: 40px;
+  height: 40px;
+  background: url('../img/wrangler/colorizer/sprite_colorizer.png') no-repeat;
+  background-position: 0px 0px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+  left: -240px;
+  top: 25px;
+}
+#colorpicker li:nth-child(2) {
+  background-position: -40px 0;
+}
+#colorpicker li:nth-child(3) {
+  background-position: -120px 0;
+}
+#colorpicker li:nth-child(4) {
+  background-position: -160px 0;
+}
+#colorpicker li:nth-child(5) {
+  background-position: -200px 0;
+}
+#colorpicker li:nth-child(6) {
+  background-position: -240px 0;
+}
+#colorpicker li:nth-child(7) {
+  background-position: -280px 0;
+}
+#colorpicker li:nth-child(8) {
+  background-position: -320px 0;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+body {
+  background: #000000;
+}
+.carousel-indicators {
+  position: absolute;
+  top: 77%;
+}
+.carouselimg {
+  width: 100%;
+  margin: auto;
+}
+.carmodels {
+  text-align: center;
+  width: 91.5%;
+  margin: 0 auto;
+  position: absolute;
+  top: 38%;
+  left: 4.25%;
+}
+.carmodels img {
+  width: 100%;
+}
+.promos {
+  text-align: center;
+  margin-top: -8%;
+  position: relative;
+}
+.promos img {
+  width: 70%;
 }
